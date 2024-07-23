@@ -1,0 +1,313 @@
+
+/* phone view */
+@media (max-width: 620px) {
+    .hamburger-menu{
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin: 5px;
+        background-color: rgba(17, 62, 102, 1);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        right: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+    }
+       
+    .hamburger-menu.open .bar:nth-child(1) {
+        /* rotate the top bar when the menu is open */
+        opacity: 0;
+      
+    }
+    
+    .hamburger-menu.open .bar:nth-child(2) {
+        /* hide the middle bar when the menu is open */
+        transform: rotate(-47deg);
+        margin-top: 5px;
+        margin-left: 5px;
+        background-color: white;
+    }
+    
+    .hamburger-menu.open .bar:nth-child(3) {
+        /* rotate the bottom bar when the menu is open */
+        transform: rotate(47deg);
+        margin-left: 5px;
+        background-color: white;
+
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 35px;
+        justify-content: space-around;
+        height: 60%;
+    }
+    .navbar.open ul li a{
+        color: white;
+    }
+    .navbar.open {
+        /* display the header bar when the menu is open */
+        left: 50%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(17, 62, 102, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+
+    }
+    .biggest-world{
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+    .biggest-world .world-text .h1{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .biggest-world .world-text .h2{
+        font-size: 1rem;
+    }
+    .biggest-world .world-text .h3{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .sign{
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        margin-left: 0;
+    }
+    .facultybox{
+        padding: 1% 4%;
+        display: flex;
+        flex-direction: row;
+    }
+    .text{
+        width: 65%;
+        font-size: 16px;
+        line-height: 15px;
+        font-weight: 500;
+    
+    }
+    .photo{
+        height: auto;
+        padding-top: 40px;
+        width: 35%;
+    }
+    .stu-photo{
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer .footer-icons{
+        padding: 1.5%;
+        width: 60%;
+    }
+    .footer-text{
+        width: 40%;
+    }
+    .footer-text .h4 span a{
+        color: rgba(17, 62, 102, 1);
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .footer-text .h4 b{
+        font-size: 12px;
+    }
+    .icons1, .icons2, .icons3, .icons4{
+        width: 14%;
+        margin-right: 10px;
+    }
+    #scroll-to-top {
+        background-color: white;
+        color: rgba(17, 62, 102, 1);
+        border: solid rgba(17, 62, 102, 1);
+        font-size: 0.8rem;
+        font-weight: bolder;
+        padding: 5px 10px;
+        opacity: 0;
+      }
+      .touch-box{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .touch-box .message-me{
+        margin-top: 10px;
+    }
+    .name-email-boxes .name, .name-email-boxes .email{
+        width: 100%;
+    } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet view */
+@media (max-width: 830px) {
+    .Uni-textbar ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        color: rgba(17, 62, 102, 1);
+        padding: 2px;
+    }
+
+    .logobar{
+        max-width: 174px;
+    }
+    .Uni-offersboxs{
+       display: flex;
+       flex-wrap: wrap;
+    }
+     .international{
+            flex: 1 0 180px;
+            margin: 10px;
+            box-sizing: border-box;
+          
+    }
+    .biggest-world{
+        overflow: hidden;
+    }
+    .header-p{
+        margin-top: 20%;
+    }
+    .world-text .h1{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .world-text .h2{
+        font-size: 2rem;
+    }
+    .world-text .h3{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .btn{
+        text-decoration: none;
+        padding: 3px 4px;
+        background-color: rgba(17, 62, 102, 1);
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 30px;
+        padding: 3px 20px;
+        border: solid white;
+    }
+    .inter-text{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .offers-paragraph{
+        line-height: 1.4rem;
+    }
+    .first-p{
+        font-weight: 1000;
+        margin-top: 10px;
+    }
+    .second-p{
+        font-size: 2rem;
+        color: rgba(17, 62, 102, 1);
+    }
+    .facultybox{
+        padding: 1% 4%;
+        display: flex;
+        flex-direction: row;
+    }
+    .text{
+        width: 65%;
+        font-size: 0.7rem;
+        line-height: 20px;
+        font-weight: 600;
+    
+    }
+    .photo{
+        padding-top: 20px;
+        width: 35%;
+    }
+    .stu-photo{
+        width: 100%;
+    }
+    .h4 span a{
+        color: rgba(17, 62, 102, 1);
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .h4 b{
+        font-size: 17px;
+    }
+    #scroll-to-top {
+        background-color: white;
+        color: rgba(17, 62, 102, 1);
+        border: solid rgba(17, 62, 102, 1);
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 10px 14px;
+        opacity: 0;
+      }
+      .msg-box .name-email-boxes input{
+        border-radius: 4px;
+        padding: 6px;
+        font-size: 0.6rem;
+    }
+    .msg-box .name-email-boxes .email{
+        margin-left: 10px;
+    }
+    .subject input, .area-text{
+        border-radius: 4px;
+        padding: 6px;
+        font-size: 0.6rem;
+        margin-top: 14px;
+    }
+    .my-info-box .info-icon i{
+        font-size: 25px;
+        color: rgba(17, 62, 102, 1);
+        margin-right: 16px;
+    }
+    .my-info-box{
+        margin-top: 20px;
+    }
+
+}
+
+
+

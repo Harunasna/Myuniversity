@@ -1,0 +1,315 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    color: rgba(17, 62, 102, 1);
+    font-size: 1rem;
+    font-weight: bolder;
+    border: solid rgba(17, 62, 102, 1);
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  #scroll-to-top.show {
+    opacity: 1;
+  }
+  
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    position: fixed;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+    box-shadow: rgb(146, 145, 145) 0 0 6px 0;
+}
+.Uni-textbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.Uni-logobar{
+    cursor: pointer;
+}
+.Uni-textbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.Uni-textbar ul li{
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+}
+.Uni-textbar ul li a{
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 900;
+    cursor: pointer;
+    color: rgba(17, 62, 102, 1);
+    padding: 5px;
+}
+.Uni-textbar ul li a:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(17, 62, 102, 1);
+}
+.header-p{
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1% 3%;
+    margin-top: 15%;
+}
+.first-p{
+    font-weight: 1200;
+}
+.second-p{
+    font-size: 3rem;
+    color: rgba(17, 62, 102, 1);
+    margin-top: 5px;
+}
+.Uni-offersboxs{
+    display: flex;
+    flex-direction: row;
+    padding: 1% 3%;
+    color: white;
+}
+.international{
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(17, 62, 102, 1);
+    border-radius: 8px;
+    margin-left: 25px;
+}
+.international:hover{
+    box-shadow: 0 0 20px 0px rgba(5, 5, 5, 0.596);
+}
+.inter-text{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.offers-paragraph{
+    line-height: 2rem;
+}
+.biggest-world{
+    padding: 1% 2%;
+    text-align: center;
+    background-image: url(backgrounds/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 2% 6%;
+}
+.world-text .h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.world-text .h2{
+    font-size: 2.5rem;
+}
+.world-text .h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.sign{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
+.btn{
+    text-decoration: none;
+    padding: 5px 8px;
+    background-color: rgba(17, 62, 102, 1);
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    border-radius: 40px;
+    padding: 6px 30px;
+    border: solid white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    box-shadow: rgb(146, 145, 145) 0 0 6px 0;
+    color: rgba(17, 62, 102, 1);
+    border: solid rgba(17, 62, 102, 1);
+}
+.faculty-text{
+    text-align: center;
+}
+.facultybox{
+    padding: 1% 4%;
+    display: flex;
+    flex-direction: row;
+}
+.text{
+    text-align: justify;
+    padding: 15px;
+    padding-top: 40px;
+    padding-right: 8%;
+    color: rgb(65, 52, 52);
+    font-size: 1.2rem;
+    line-height: 40px;
+    font-weight: bolder;
+
+
+}
+.h4, .far{
+    color: white;
+}
+.h4 span a{
+    color: rgba(17, 62, 102, 1);
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.h4 span a:hover{
+    color: white;
+}
+.h4 b{
+    color: white;
+    font-size: 22px;
+}
+.footer{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 2%;
+}
+.icons1, .icons2, .icons3, .icons4{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.icons1:hover{
+    background-color: blue;
+}
+.icons2:hover{
+    background-color: palevioletred;
+    cursor: pointer;
+}
+.icons3:hover{
+    background-color: rgb(63, 131, 209);
+    cursor: pointer; 
+}
+.icons4:hover{
+    background-color: rgb(218, 0, 0);
+    cursor: pointer; 
+}
+.contactbox{
+ text-align: center;
+}
+.line-contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 8px;
+}
+.line{
+    margin-top: 4px;
+    width: 60px;
+    height: 5px;
+    background-color: rgba(17, 62, 102, 1);
+    margin: 5px;
+}
+.line-contacts .lines .line:nth-child(1) {
+    opacity: 0;
+}
+.line-contacts .lines .line:nth-child(3) {
+    opacity: 1;
+}
+.line-contacts .lines .line:nth-child(3) {
+    opacity: 0;
+}
+.touch-box{
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: row;
+}
+.my-info-box{
+    display: flex;
+    flex-direction: row;
+}
+.name-email-boxes{
+    display: flex;
+    flex-direction: row;
+}
+.msg-box .name-email-boxes input{
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: rgb(146, 145, 145) 0 0 6px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+.msg-box .name-email-boxes .email{
+    margin-left: 15px;
+}
+.subject input, .area-text{
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: rgb(146, 145, 145) 0 0 6px 0;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 18px;
+}
+.submit-btn{  
+    margin-top: 18px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgba(17, 62, 102, 1);
+    color: white;
+    border: solid white;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: white;
+    color: rgba(17, 62, 102, 1);
+    border: solid rgba(17, 62, 102, 1);
+}
+.my-info-box .info-icon i{
+    font-size: 30px;
+    color: rgba(17, 62, 102, 1);
+    margin-right: 20px;
+}
+.my-info-box{
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

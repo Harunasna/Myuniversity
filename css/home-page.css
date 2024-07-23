@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    color: rgba(17, 62, 102, 1);
+    font-size: 2rem;
+    font-weight: bolder;
+    border: solid rgba(17, 62, 102, 1);
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    z-index: 999;
+}
+#scroll-to-top.show {
+    opacity: 1;
+}
+#myDiv {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+    box-shadow: rgb(146, 145, 145) 0 0 6px 0;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+.icon-box{
+    padding: 10px;
+}
+
+
+.div-logo{
+    cursor: pointer;
+}
+.div{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+    padding: 10%;
+    background-color: rgba(17, 62, 102, 1);
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 8px;
+    border: solid white;
+    cursor: pointer;
+}
+.div:hover{
+    background-color: white;
+    box-shadow: rgb(146, 145, 145) 0 0 10px 5px;
+    color: rgba(17, 62, 102, 1);
+    border: solid rgba(17, 62, 102, 1);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.user-info-container{
+    transition: all 0.3s ease-in-out;
+    width: 30%;
+    
+}
+.first-div{
+    text-align: center;
+    margin-top: 10px;
+}
+.username-profile{
+    border-radius: 50%;
+}
+.user-info-box{
+    background-color: rgba(17, 62, 102, 1);
+    padding: 2% 6%;
+    width: 100%;
+}
+h1, h2{
+    width: 100%;
+    color: white;
+    margin-top: 8px;
+
+}
+.link{
+    margin-top: 13px;
+}
+.info{
+    color: black;
+    font-size: 18px;
+}
+.correct{
+    background: white;
+    color: rgba(59, 50, 50, 0.877);
+    padding: 10px;
+    border-radius: 4px;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-hide{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 30px;
+    padding: 8px 30px;
+    border: solid white;
+    cursor: pointer;
+}
+.btn-hide:hover{
+    background-color: white;
+    color: black;
+    border: solid black;
+}
+
+.admission-status-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+
+}
+.adm-text{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.admission{
+    margin-top: 25%;
+    text-align: center;
+    margin-bottom: 8%;
+}
+.check-btn{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 30px;
+    padding: 8px 20px;
+    border: solid white;
+    cursor: pointer;
+}
+.check-btn:hover{
+    background-color: white;
+    box-shadow: rgb(146, 145, 145) 0 0 10px 5px;
+    color: black;
+    border: solid black;
+}
+
+.h4, .far{
+    color: white;
+}
+.h4 span a{
+    color: rgba(17, 62, 102, 1);
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.h4 span a:hover{
+    color: white;
+}
+.h4 b{
+    color: white;
+    font-size: 22px;
+}
+.footer{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 2%;
+}
+.icons1, .icons2, .icons3, .icons4{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.icons1:hover{
+    background-color: blue;
+}
+.icons2:hover{
+    background-color: palevioletred;
+    cursor: pointer;
+}
+.icons3:hover{
+    background-color: rgb(63, 131, 209);
+    cursor: pointer; 
+}
+.icons4:hover{
+    background-color: rgb(218, 0, 0);
+    cursor: pointer; 
+}
+
+/* loader style; */
+.loading-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    border: 15px solid #ddd;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: -2;
+  }
+  .loader::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-radius: 50%;
+    border: 15px solid rgba(17, 62, 102, 1);
+    animation: l18 2s infinite linear;
+  }
+  @keyframes l18 {
+      0%   {clip-path:polygon(50% 50%,0 0,0    0,0    0   ,0    0   ,0    0   )}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0   ,100% 0   ,100% 0   )}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone view */
+@media (max-width: 780px) {
+    .hamburger-menu{
+        margin-top: 33px;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin: 5px;
+        background-color: rgba(17, 62, 102, 1);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        right: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+    }
+        
+    .hamburger-menu.open .bar:nth-child(1) {
+        /* rotate the top bar when the menu is open */
+        opacity: 0;
+      
+    }
+    
+    .hamburger-menu.open .bar:nth-child(2) {
+        /* hide the middle bar when the menu is open */
+        transform: rotate(-47deg);
+        margin-top: 5px;
+        margin-left: 5px;
+        background-color: white;
+    }
+    
+    .hamburger-menu.open .bar:nth-child(3) {
+        /* rotate the bottom bar when the menu is open */
+        transform: rotate(47deg);
+        margin-left: 5px;
+        background-color: white;
+
+    }
+    .navbar.open {
+        /* display the header bar when the menu is open */
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(17, 62, 102, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+
+    }
+    .div{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-info-container{
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    
+}
+.admission-status-container{
+    width: 100%;
+
+}
+.admission{
+    margin-top: 15%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 440px) {
+    .header .div-logo{
+        margin-top: 3%;
+        width: 80%;
+    }
+
+}

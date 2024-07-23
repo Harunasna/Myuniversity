@@ -1,0 +1,12 @@
+html
+<button id="toggle">Submit</button>
+<div id="hideOnSubmit">
+  <!-- content here -->
+</div;
+
+js
+ elementToHide = document.querySelector("#hideOnSubmit");
+
+document.querySelector("#toggle").addEventListener("click", () => {
+  elementToHide.style.display = "none";
+});
